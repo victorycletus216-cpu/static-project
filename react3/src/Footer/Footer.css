@@ -1,0 +1,105 @@
+
+
+footer {
+  background-color: #5C3313;
+  padding-left: 1rem;  
+  padding-right: 1rem; 
+}
+
+
+footer h2{
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 1rem;
+    color: var(--cream);   
+}
+
+footer p{
+  color: var(--cream);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cream);
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer .sh2{
+    display: flex;
+    margin-left: 2px;
+    color: #5C3313;
+    gap: 1rem;
+}
+    
+footer .icon1{
+    color: blue;
+}
+
+footer .icon2{
+    color: lightblue;
+}
+
+footer .icon3{
+    color: orange;
+}
+
+footer .deed{
+    border-top: 1px solid;
+    text-align: center;
+    padding-top: 6px;
+}
+
+footer .deed p{
+     padding-bottom: 10px;
+     color: #fff;
+}
+
+footer .main-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  footer .main-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .main-grid {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+
+/* @media (min-width: 768px) {
+  footer .lit-grid{
+    padding-left: 4rem;  
+    padding-right: 4rem;
+  }
+
+  footer .lit-grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* md:grid-cols-3 
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .lit-grid{
+    padding-left: 7rem;  /* lg:px-28
+    padding-right: 7rem;
+  }
+}
+
+footer .lit-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* grid-cols-1 
+  gap: 1rem; /* gap-8 
+} */

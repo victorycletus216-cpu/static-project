@@ -1,0 +1,299 @@
+
+
+/* ---------- hero: text left, image right ---------- */
+.about-hero {
+    background: var(--white);
+    padding: 14rem 9% 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-hero h1 {
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1.2rem;
+}
+
+.about-intro {
+    text-transform: none;
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--muted);
+    max-width: 34rem;
+    margin: 0;
+}
+
+.about-hero-image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;         
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(26, 28, 30, 0.10);
+}
+
+
+.about-story {
+    background: var(--off-white);
+    padding: 6rem 9%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-story-image img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(26, 28, 30, 0.10);
+}
+
+.about-story h2,
+.about-mission h2,
+.about-why h2 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1.5rem;
+}
+
+
+.about-hero .eyebrow,
+.about-story-text .eyebrow,
+.about-mission-card .eyebrow,
+.about-why .eyebrow {
+    color: var(--brown);
+}
+
+
+.about-story-text p:not(.eyebrow) {
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--muted);
+    margin: 0 0 1.2rem;
+}
+
+
+.about-mission {
+    background: var(--white);
+    padding: 6rem 9%;
+}
+
+.about-mission-card {
+    background: var(--cream);
+    border-radius: 16px;
+    padding: 4rem 3rem;
+    max-width: 84rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-mission-text {
+    text-transform: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.95;
+    color: var(--black);          
+    max-width: 58rem;
+    margin: 0 auto;
+}
+
+.about-why {
+    background: var(--off-white);
+    padding: 6rem 9%;
+    text-align: center;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 120rem;
+    margin: 3rem auto 0;
+    text-align: left;
+}
+
+.why-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem 1.8rem;
+    box-shadow: 0 10px 30px rgba(26, 28, 30, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(26, 28, 30, 0.14);
+}
+
+.why-card h3 {
+    text-transform: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--black);
+    margin: 0 0 0.6rem;
+}
+
+.why-card p {
+    text-transform: none;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--muted);
+    margin: 0;
+}
+
+.about-cta {
+    background: var(--black);
+    padding: 6rem 9%;
+    text-align: center;
+}
+
+.about-cta h2 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--white);
+    text-transform: none;
+    margin-bottom: 1.2rem;
+}
+
+.about-cta .eyebrow {
+    color: var(--cream);
+    margin-bottom: 1.2rem;
+}
+
+.about-cta p {
+    text-transform: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 46rem;
+    margin: 0 auto 2.5rem;
+}
+
+.about-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.about-cta .btn {
+    background: var(--cream);
+    border-color: var(--cream);
+    color: var(--black);
+}
+
+.about-cta .btn:hover {
+    background: var(--white);
+    border-color: var(--white);
+    color: var(--black);
+}
+
+.about-cta .btn-outline {
+    background: transparent;
+    border-color: var(--cream);
+    color: var(--cream);
+}
+
+.about-cta .btn-outline:hover {
+    background: var(--cream);
+    border-color: var(--cream);
+    color: var(--black);
+}
+
+
+@media (max-width: 991px) {
+    .about-hero,
+    .about-story,
+    .about-mission,
+    .about-why,
+    .about-cta {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-hero,
+    .about-story {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        padding-top: 12rem;
+        padding-bottom: 4rem;
+        gap: 2.5rem;
+    }
+
+    .about-story {
+        grid-template-columns: 1fr;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 2.5rem;
+    }
+
+    .about-mission,
+    .about-why {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .about-mission-card {
+        padding: 3rem 1.5rem;
+    }
+
+    .about-cta {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .about-intro {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .about-hero {
+        padding-top: 11rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-cta-buttons {
+        width: 100%;
+    }
+
+    .about-cta-buttons .btn {
+        flex: 1 1 100%;
+    }
+}
+

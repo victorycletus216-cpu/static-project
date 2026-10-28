@@ -1,0 +1,121 @@
+.cart{
+    position: relative;
+}
+
+.cart .shop-basket{
+    color:#A86A2F;
+    cursor:pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    position: relative;      
+}
+
+.cart .cart-count{
+    position: absolute;
+    top: -0.6rem;
+    right: -0.7rem;
+    min-width: 1.4rem;
+    height: 1.4rem;
+    padding: 0 0.3rem;
+    border-radius: 50%;
+    background: var(--brown);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.shopping-cart{
+    position: absolute;
+    top: 130%;
+    right: 0;
+    width: 30rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 1.5rem;
+    z-index: 1001;
+}
+
+.shopping-cart .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: var(--border);
+}
+
+.shopping-cart .content h3{
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.shopping-cart .price{
+    color: var(--brown);
+    font-weight: 500;
+}
+
+.shopping-cart .quantity{
+    display: block;
+    color: #777;
+    font-size: .9rem;
+}
+
+.shopping-cart .trash-btn{
+    background: none;
+    border: none;
+    color: #A86A2F;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.shopping-cart .trash-btn:hover{
+    color: var(--black);
+}
+
+.shopping-cart .total{
+    text-align: right;
+    padding: 1rem 0;
+    font-weight: 600;
+    color: var(--brown);
+}
+
+.shopping-cart .btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: 0.2rem solid transparent;
+    border-radius: 15px;
+    background-color: var(--brown);
+    color: #fff;
+    cursor: pointer;
+}
+
+.shopping-cart .btn:hover{
+    background-color: #A86A2F;
+}
+
+.shopping-cart .btn:disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.shopping-cart .empty-cart{
+    color: #777;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px){
+    .shopping-cart{
+        width: min(80vw, 30rem);
+        right: 0;
+    }
+}
